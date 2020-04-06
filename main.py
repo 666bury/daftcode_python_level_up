@@ -4,8 +4,8 @@ from pydantic import BaseModel
 app = FastAPI()
 
 @app.get("/")
-def hello_wrold():
-    return {"message": "Hello World"}
+def hello():
+    return {"message": "Hello World during the coronavirus pandemic!"}
 
 class HelloNameResp(BaseModel):
     message: str
